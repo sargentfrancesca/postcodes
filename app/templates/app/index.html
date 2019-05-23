@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+    <head>
+        <title>Index Page</title>
+    </head>
+
+    <body>
+        <img src="{% static 'images/summer_poms.gif'%}" width=200 style="float:right;">
+        <h1>Postcodes</h1>
+        <h2>Locations</h2>
+
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+
+        <ul>
+            {% for item in locations %}
+                <li>{{ item.name }} : {{ item.postcode }} {{ item.longitude }} {{ item.latitude }}</li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>

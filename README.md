@@ -46,7 +46,7 @@ The project will now be available at `http://localhost:8000`.
 ## Useage
 
 * `http://localhost:8000` will list our stores alongside their geographical data.
-* `http://localhost:8000/radius/<postcode>/<distance>` will list all stores within a given radius, where -
+* `http://localhost:8000/radius/<postcode>/<radius>` will list all stores within a given radius, where -
     * `<postcode>` is any valid UK postcode, for example, SW1A 1AA.
     * `<radius>` is the radius, or distance, in which you'd like to search for stores in km. For example, 100.
 
